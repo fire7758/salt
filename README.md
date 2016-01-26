@@ -1,7 +1,9 @@
 
 ## 2016/1/26 ##
 一、 扩展模块
+
 	1.功能说明及使用方法
+
 		添加文件md5校验
 		salt '*' check.file salt://path/to/file /minion/dest
 
@@ -15,5 +17,7 @@
 		将_modules文件夹部署到/srv/salt，并执行salt \* saltutil.sync_modules
 
 二、 修改源码
+
 	1.修改salt.client模块，加入client:local执行结果带回jid（修改549行中的return）
+
 	2.重启salt-api
